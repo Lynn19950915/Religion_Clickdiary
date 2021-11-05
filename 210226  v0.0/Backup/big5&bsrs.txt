@@ -1,0 +1,418 @@
+				var speak 			= $("input[name='speak']:checked").val(); 
+	    		var sameheart 		= $("input[name='sameheart']:checked").val(); 
+				var completethings 	= $("input[name='completethings']:checked").val(); 
+				var relax			= $("input[name='relax']:checked").val(); 
+				var imagination 	= $("input[name='imagination']:checked").val(); 
+				var social 			= $("input[name='social']:checked").val(); 
+				var doubt 			= $("input[name='doubt']:checked").val(); 
+				var carelessness 	= $("input[name='carelessness']:checked").val(); 
+				var tension 		= $("input[name='tension']:checked").val(); 
+	    		var keep 			= $("input[name='keep']:checked").val(); 
+	    		var bsrs_anxiety    = $("input[name='anxiety']:checked").val(); 
+	    		var bsrs_irritation = $("input[name='irritation']:checked").val(); 
+	    		var bsrs_depression = $("input[name='depression']:checked").val(); 
+	    		var bsrs_inferiority= $("input[name='inferiority']:checked").val(); 
+	    		var bsrs_insomnia 	= $("input[name='insomnia']:checked").val(); 
+	    		var health 			= $("input[name='health']:checked").val(); 
+function ValidateForm_3() {
+			var speak 			= $("input[name='speak']:checked").val(); 
+    		var sameheart 		= $("input[name='sameheart']:checked").val(); 
+			var completethings 	= $("input[name='completethings']:checked").val(); 
+			var relax			= $("input[name='relax']:checked").val(); 
+			var imagination 	= $("input[name='imagination']:checked").val(); 
+			var social 			= $("input[name='social']:checked").val(); 
+			var doubt 			= $("input[name='doubt']:checked").val(); 
+			var carelessness 	= $("input[name='carelessness']:checked").val(); 
+			var tension 		= $("input[name='tension']:checked").val(); 
+    		var keep 			= $("input[name='keep']:checked").val(); 
+    		var bsrs_anxiety    = $("input[name='anxiety']:checked").val(); 
+    		var bsrs_irritation = $("input[name='irritation']:checked").val(); 
+    		var bsrs_depression = $("input[name='depression']:checked").val(); 
+    		var bsrs_inferiority= $("input[name='inferiority']:checked").val(); 
+    		var bsrs_insomnia 	= $("input[name='insomnia']:checked").val(); 
+    		var health 			= $("input[name='health']:checked").val(); 
+
+    		if (!speak) {
+    			$.alert('請選擇是否符合不太愛說話')
+    			return false ;
+    		} else if (!sameheart) {
+    			$.alert('請選擇是否符合很有同情心')
+    			return false ;
+    		}  else if (!completethings) {
+    			$.alert('請選擇是否符合事情做到完為止')
+    			return false ;
+    		} else if (!relax) {
+    			$.alert('請選擇是否符合懂得放鬆且會處理壓力')
+    			return false ;
+    		} else if (!imagination) {
+    			$.alert('請選擇是否符合想像力豐富')
+    			return false ;
+    		} else if (!social) {
+    			$.alert('請選擇是否符合外向、會和人交際')
+    			return false ;
+    		} else if (!doubt) {
+    			$.alert('請選擇是否符合不太信任別人')
+    			return false ;
+    		} else if (!carelessness) {
+    			$.alert('請選擇是否符合粗心大意')
+    			return false ;
+    		} else if (!tension) {
+    			$.alert('請選擇是否符合容易緊張')
+    			return false ;
+    		} else if (!keep) {
+    			$.alert('請選擇是否符合是保守的人')
+    			return false ;
+    		} else if (!bsrs_anxiety) {
+    			$.alert('請選擇最近是否感覺緊張不安')
+    			return false ;
+    		} else if (!bsrs_irritation) {
+    			$.alert('請選擇最近是否覺得容易苦惱或動怒')
+    			return false ;
+    		} else if (!bsrs_depression) {
+    			$.alert('請選擇最近是否感覺憂鬱、情緒低落')
+    			return false ;
+    		} else if (!bsrs_inferiority) {
+    			$.alert('請選擇最近是否覺得不上別人')
+    			return false ;
+    		} else if (!bsrs_insomnia) {
+    			$.alert('請選擇最近是否睡眠困難，譬如難以入睡、易醒或早醒')
+    			return false ;
+    		} else if (!health) {
+    			$.alert('請選擇我認為目前自己的健康狀況如何')
+    			return false ;
+    		} else {
+    			return true ;
+    		}
+		}
+<div id="page_3" class="hide_atfirst">
+					<div class="card-header text-center"><h4>請回答以下人格特質問卷</h4></div>
+					<div class="input-group ">
+						<div class="input-group-prepend col-sm-3 pl-0 pr-0">
+							<span class="input-group-text" >不太愛說話</span>
+						</div>
+					  	<div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="speak" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="speak" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="speak" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="speak" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+						<div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    	<span class="input-group-text" >很有同情心</span>
+						</div>
+						<div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+							<label class="btn btn-outline-primary">
+						    	<input name="sameheart" type="radio" value="3" required/>很符合
+							</label>
+							<label class="btn btn-outline-primary">
+								<input name="sameheart" type="radio" value="2" />還算符合
+							</label>
+							<label class="btn btn-outline-primary">
+								<input name="sameheart" type="radio" value="1" />不太符合
+							</label>
+							<label class="btn btn-outline-primary">
+								<input name="sameheart" type="radio" value="0" />很不符合
+							</label>
+						</div>
+					</div>
+					<div class="input-group ">
+						<div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    	<span class="input-group-text" >事情做到完為止</span>
+					  	</div>
+					  	<div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  	<label class="btn btn-outline-primary">
+						    	<input name="completethings" type="radio" value="3" required/>很符合
+						  	</label>
+							<label class="btn btn-outline-primary">
+							    <input name="completethings" type="radio" value="2" />還算符合
+							</label>
+							<label class="btn btn-outline-primary">
+							  	<input name="completethings" type="radio" value="1" />不太符合
+							</label>
+							<label class="btn btn-outline-primary">
+							  	<input name="completethings" type="radio" value="0" />很不符合
+							</label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >懂得放鬆且會處理壓力</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="relax" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="relax" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="relax" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="relax" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >想像力豐富</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="imagination" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="imagination" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="imagination" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="imagination" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >外向、會和人交際</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="social" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="social" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="social" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="social" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >不太信任別人</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="doubt" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="doubt" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="doubt" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="doubt" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >粗心大意</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="carelessness" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="carelessness" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="carelessness" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="carelessness" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >容易緊張</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="tension" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="tension" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="tension" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="tension" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >是保守的人</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+						  <label class="btn btn-outline-primary">
+						    <input name="keep" type="radio" value="3" required/>很符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="keep" type="radio" value="2" />還算符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="keep" type="radio" value="1" />不太符合
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="keep" type="radio" value="0" />很不符合
+						  </label>
+						</div>
+					</div>
+					<hr>
+					<div class="card-header text-center"><h4>我最近是否有以下狀況？</h4></div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >感覺緊張不安</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+					  	<label class="btn btn-outline-primary">
+						    <input name="anxiety" type="radio" value="4" required/>非常厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="anxiety" type="radio" value="3" />厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="anxiety" type="radio" value="2" />中等程度
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="anxiety" type="radio" value="1" />輕微
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="anxiety" type="radio" value="0" />完全沒有
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >覺得容易苦惱或動怒</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+					  	<label class="btn btn-outline-primary">
+						    <input name="irritation" type="radio" value="4" required/>非常厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="irritation" type="radio" value="3" />厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="irritation" type="radio" value="2" />中等程度
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="irritation" type="radio" value="1" />輕微
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="irritation" type="radio" value="0" />完全沒有
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >感覺憂鬱、情緒低落</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+					  	<label class="btn btn-outline-primary">
+						    <input name="depression" type="radio" value="4" required/>非常厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="depression" type="radio" value="3" />厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="depression" type="radio" value="2" />中等程度
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="depression" type="radio" value="1" />輕微
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="depression" type="radio" value="0" />完全沒有
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text" >覺得不上別人</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+					  	<label class="btn btn-outline-primary">
+						    <input name="inferiority" type="radio" value="4" required/>非常厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="inferiority" type="radio" value="3" />厲害
+						  </label>
+						  <label class="btn btn-outline-primary">
+						    <input name="inferiority" type="radio" value="2" />中等程度
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="inferiority" type="radio" value="1" />輕微
+						  </label>
+						  <label class="btn btn-outline-primary">
+						  	<input name="inferiority" type="radio" value="0" />完全沒有
+						  </label>
+						</div>
+					</div>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text text-left" >睡眠困難，譬如<br class="d-none d-sm-block">難以入睡、易醒或早醒</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+				  		  <label class="btn btn-outline-primary pt-onls">
+						    <input name="insomnia" type="radio" value="4" required/>非常厲害
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						    <input name="insomnia" type="radio" value="3" />厲害
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						    <input name="insomnia" type="radio" value="2" />中等程度
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						  	<input name="insomnia" type="radio" value="1" />輕微
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						  	<input name="insomnia" type="radio" value="0" />完全沒有
+						  </label>
+						</div>
+					</div>
+					<hr>
+					<div class="input-group ">
+					  <div class="input-group-prepend col-sm-3 pl-0 pr-0">
+					    <span class="input-group-text text-left">我認為目前自己的<br class="d-none d-sm-block">健康狀況如何?</span>
+					  </div>
+					  <div class="btn-group btn-group-toggle btn-group-custom-flex col-sm-8 pl-0 pr-0" data-toggle="buttons">
+					  	  <label class="btn btn-outline-primary pt-onls">
+						    <input name="health" type="radio" value="4" required/>極佳
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						    <input name="health" type="radio" value="3" />很好
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						    <input name="health" type="radio" value="2" />好
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						  	<input name="health" type="radio" value="1" />還可以
+						  </label>
+						  <label class="btn btn-outline-primary pt-onls">
+						  	<input name="health" type="radio" value="0" />差
+						  </label>
+						</div>
+					</div>
+					<div class="submit_button" align="center">
+						<button id="btn_page_3" class="btn btn-success btn-lg btn-last-page">上一頁</button>
+						<input class="btn btn-primary btn-lg " type="submit" id="submit" value="送出!">
+					</div>
+				</div>
